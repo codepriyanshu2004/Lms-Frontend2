@@ -1,16 +1,91 @@
-# React + Vite
+# LMS (Learning Management System)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based Learning Management System (LMS) built to help students access courses, track progress, and interact with educational content. The platform allows instructors to manage courses and students to enroll and learn online.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- User Authentication (Login/Register)
+- Student Dashboard
+- Instructor Dashboard
+- Course Creation and Management
+- Course Enrollment
+- Video and Learning Content Support
+- Progress Tracking
+- Responsive Design
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React.js
+- Vite
+- Redux Toolkit
+- React Router
+- Tailwind CSS / CSS
 
-## Expanding the ESLint configuration
+### Backend
+- Node.js
+- Express.js
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Database
+- MongoDB
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/codepriyanshu2004/Lms-Frontend2
+cd lms
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+### setUp instruction for tailwind
+ Tailwind installation doc https://tailwindcss.com/docs/installation/using-vite
+
+ ## Tailwind CSS Setup
+
+Install Tailwind CSS:
+
+```bash
+npm install tailwindcss @tailwindcss/vite
+
+
+## Project Structure
+
+```text
+src/
+├── components/
+├── pages/
+├── redux/
+├── services/
+├── routes/
+├── assets/
+└── App.jsx
+```
+
+## Future Enhancements
+
+- Online Payments
+- Certificates
+- Live Classes
+- Quiz and Assignments
+- Course Reviews and Ratings
+
+## Author
+
+Your Name
+
+## License
+
+This project is licensed under the MIT License.
