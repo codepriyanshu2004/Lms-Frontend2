@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { Link, useNavigate } from 'react-router-dom';
 import HomeLayout from '../Layouts/HomeLayout';
 import { createAccount } from '../Redux/Slices/AuthSlice';
-import regexMatcher from "../Helpers/regexMatcher"
+import {isEmail,isValidPassword} from "../Helpers/regexMatcher.js";
 
 
 function Signup(){
@@ -58,12 +58,12 @@ function Signup(){
             return;
         }
 
-        if(!regexMatcher.isEmail(signupData.email)){
+        if(isEmail(signupData.email)){
             toast.error("Invalid email id");
             return;
         }
 
-        if(!regexMatcher.isValidPassword(signupData.password)){
+        if(isValidPassword(signupData.password)){
             toast.error("Password should be 6 - 16 character long with atleast a number and special character")
             return;
         }

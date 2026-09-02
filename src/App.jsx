@@ -8,6 +8,7 @@ import Aboutus from './Pages/AboutUs.jsx'
 import HomePage from './Pages/HomePage.jsx'
 import NotFound from './Pages/NotFound.jsx'
 import Signup from './Pages/Signup.jsx'
+import Login from './Pages/Login.jsx'
 
 function App() {
  
@@ -20,6 +21,7 @@ function App() {
       <Route path='/AboutUs' element={<Aboutus/>}> </Route>
 
       <Route path='/signup' element={<Signup/>}></Route>
+      <Route path='/login' element={<Login/>}> </Route>
       <Route path='*' element={<NotFound/>}></Route>
    </Routes>
      
