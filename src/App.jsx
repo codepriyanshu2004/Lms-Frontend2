@@ -9,6 +9,7 @@ import HomePage from './Pages/HomePage.jsx'
 import NotFound from './Pages/NotFound.jsx'
 import Signup from './Pages/Signup.jsx'
 import Login from './Pages/Login.jsx'
+import CourseList from './Pages/Course/CourseList.jsx'
 
 function App() {
  
@@ -19,6 +20,7 @@ function App() {
    <Routes>
       <Route path="/" element={<HomePage/>}> </Route>
       <Route path='/AboutUs' element={<Aboutus/>}> </Route>
+      <Route path='/courses' element={<CourseList/>}> </Route>
 
       <Route path='/signup' element={<Signup/>}></Route>
       <Route path='/login' element={<Login/>}> </Route>
